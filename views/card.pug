@@ -2,4 +2,11 @@ extends layout
 
 block content
   section#content
-    h2= prompt
+    h2= text
+    if hint
+      p
+        i Hint: #{hint}
+    a(href=`${id}?side=${sideToShow}`)=sideToShowDisplay
+    br
+    br
+    a(href='/cards') Next Random Card
