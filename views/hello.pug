@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  section#content
+    form(action='/hello', method='post')
+      label Please enter your name:
+        input(type='text', name='username')
+      br
+      button(class='btn btn-success' type='submit') Submit
